@@ -1,0 +1,8 @@
+{
+  "slug": "citation-integrity",
+  "title": "Citation and quotation integrity",
+  "description": "Checks that every cited source exists and the supplied quotation occurs in that source after case/whitespace normalization. It explicitly does not infer whether a quote entails a claim or whether a source is true. The result says \u201cquoted_evidence_found,\u201d not \u201cfact verified.\u201d Missing citations and invented quotations fail.",
+  "category": "agents",
+  "demo_args": [],
+  "expected_exit": 0
+}
