@@ -1,0 +1,25 @@
+{
+  "sources": {
+    "ops": "Rollback snapshots are retained for seven days."
+  },
+  "claims": [
+    {
+      "text": "Snapshots are retained for seven days.",
+      "citations": [
+        {
+          "source_id": "ops",
+          "quote": "retained for seven days"
+        }
+      ]
+    },
+    {
+      "text": "All changes are risk-free.",
+      "citations": [
+        {
+          "source_id": "ops",
+          "quote": "all changes are risk-free"
+        }
+      ]
+    }
+  ]
+}
