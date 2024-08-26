@@ -40,3 +40,16 @@ def audit(claims, sources):
                         "semantic_entailment_checked": False})
     return results
 
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--input", type=Path, default=Path(__file__).with_name("claims.json"))
+    args = parser.parse_args()
+    try:
+        data = json.loads(args.input.read_text())
+        results = audit(data["claims"], data["sources"])
+    except (ValueError, KeyError, OSError, TypeError) as exc:
+        parser.error(str(exc))
+    print(json.dumps(results, indent=2))
+
+if __name__ == "__main__": main()

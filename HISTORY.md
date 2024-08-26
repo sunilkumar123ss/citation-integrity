@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 4 of 14. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 5 of 14. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -16,7 +16,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 2 | 2023-10-03T11:32:02+05:30 | Add synthetic input fixtures and reference data (present) |
 | 3 | 2023-11-14T17:16:51+05:30 | Implement normalize (present) |
 | 4 | 2024-03-21T14:38:37+05:30 | Implement audit (present) |
-| 5 | 2024-08-26T14:59:56+05:30 | Expose the command-line demonstration and input handling (later stage) |
+| 5 | 2024-08-26T14:59:56+05:30 | Expose the command-line demonstration and input handling (present) |
 | 6 | 2025-03-22T13:28:37+05:30 | Test whitespace normalized quote is found (later stage) |
 | 7 | 2025-04-10T11:00:07+05:30 | Test unknown source invented quote and missing (later stage) |
 | 8 | 2025-05-26T18:56:57+05:30 | Test empty quote fails (later stage) |
