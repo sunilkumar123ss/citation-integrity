@@ -15,4 +15,9 @@ class CitationTests(unittest.TestCase):
         result = audit([{"text":"claim","citations":[{"source_id":"s","quote":"SEVEN days"}]}], {"s":"Keep for seven\n days."})[0]
         self.assertEqual(result["status"], "quoted_evidence_found")
         self.assertFalse(result["semantic_entailment_checked"])
+    def test_unknown_source_invented_quote_and_missing(self):
+        claims = [{"text":"x"},{"text":"y","citations":[{"source_id":"bad","quote":"a"}]},
+                  {"text":"z","citations":[{"source_id":"s","quote":"invented"}]}]
+        results = audit(claims, {"s":"real source"})
+        self.assertTrue(all(r["status"] == "citation_integrity_failed" for r in results))
 
