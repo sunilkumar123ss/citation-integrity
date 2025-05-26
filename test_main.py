@@ -20,4 +20,7 @@ class CitationTests(unittest.TestCase):
                   {"text":"z","citations":[{"source_id":"s","quote":"invented"}]}]
         results = audit(claims, {"s":"real source"})
         self.assertTrue(all(r["status"] == "citation_integrity_failed" for r in results))
+    def test_empty_quote_fails(self):
+        result = audit([{"text":"x","citations":[{"source_id":"s","quote":" "}]}], {"s":"real"})
+        self.assertIn("empty_quote", result[0]["failures"][0])
 
