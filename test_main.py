@@ -23,4 +23,8 @@ class CitationTests(unittest.TestCase):
     def test_empty_quote_fails(self):
         result = audit([{"text":"x","citations":[{"source_id":"s","quote":" "}]}], {"s":"real"})
         self.assertIn("empty_quote", result[0]["failures"][0])
+    def test_quote_integrity_does_not_imply_claim_truth(self):
+        result = audit([{"text":"The service is guaranteed never to fail.", "citations":[{"source_id":"s", "quote":"seven days"}]}], {"s":"Snapshots last seven days."})[0]
+        self.assertEqual(result["status"], "quoted_evidence_found")
+        self.assertFalse(result["semantic_entailment_checked"])
 

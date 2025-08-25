@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 8 of 14. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 9 of 14. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -20,7 +20,7 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 6 | 2025-03-22T13:28:37+05:30 | Test whitespace normalized quote is found (present) |
 | 7 | 2025-04-10T11:00:07+05:30 | Test unknown source invented quote and missing (present) |
 | 8 | 2025-05-26T18:56:57+05:30 | Test empty quote fails (present) |
-| 9 | 2025-08-25T12:43:29+05:30 | Test quote integrity does not imply claim truth (later stage) |
+| 9 | 2025-08-25T12:43:29+05:30 | Test quote integrity does not imply claim truth (present) |
 | 10 | 2025-10-23T17:46:17+05:30 | Test one invalid citation fails the whole claim (later stage) |
 | 11 | 2025-11-19T17:19:12+05:30 | Test bad input shape is rejected (later stage) |
 | 12 | 2025-11-22T11:06:26+05:30 | Add one-command test, demonstration and CLI verification (later stage) |
