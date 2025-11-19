@@ -30,4 +30,7 @@ class CitationTests(unittest.TestCase):
     def test_one_invalid_citation_fails_the_whole_claim(self):
         result = audit([{"text":"x", "citations":[{"source_id":"s", "quote":"real text"}, {"source_id":"s", "quote":"invented text"}]}], {"s":"real text"})[0]
         self.assertEqual(result["status"], "citation_integrity_failed")
+    def test_bad_input_shape_is_rejected(self):
+        with self.assertRaises(ValueError): audit([{"text":"x","citations":"bad"}], {})
 
+if __name__ == "__main__": unittest.main()
