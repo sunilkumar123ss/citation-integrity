@@ -4,7 +4,7 @@ This reference implementation and all of the following milestone commits were pr
 
 **Every recorded author and committer date in this timeline is synthetic. These dates are not evidence that the code was written, tested, deployed, or used professionally in the past.**
 
-This snapshot is milestone 11 of 14. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
+This snapshot is milestone 12 of 14. It is an incomplete tutorial stage; source, fixtures, tests, the CLI, and automation are introduced progressively.
 
 The progression decomposes already-completed October 2026 code into meaningful additions. It is not recovered original development history. Publication time is separate from the synthetic Git timestamps.
 
@@ -23,6 +23,6 @@ The progression decomposes already-completed October 2026 code into meaningful a
 | 9 | 2025-08-25T12:43:29+05:30 | Test quote integrity does not imply claim truth (present) |
 | 10 | 2025-10-23T17:46:17+05:30 | Test one invalid citation fails the whole claim (present) |
 | 11 | 2025-11-19T17:19:12+05:30 | Test bad input shape is rejected (present) |
-| 12 | 2025-11-22T11:06:26+05:30 | Add one-command test, demonstration and CLI verification (later stage) |
+| 12 | 2025-11-22T11:06:26+05:30 | Add one-command test, demonstration and CLI verification (present) |
 | 13 | 2026-03-03T11:00:45+05:30 | Run verification on the supported Python CI matrix (later stage) |
 | 14 | 2026-07-29T12:12:18+05:30 | Document usage, limitations and the disclosed reconstructed timeline (later stage) |
